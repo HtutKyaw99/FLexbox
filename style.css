@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color: #212121;
+    height: 100vh;
+    line-height: 35px;
+}
+li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+.navbar{
+    background-color: #3a4042;
+    height: 40px;
+}
+.navbar .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    display: flex;
+}
+.nav li{
+    margin: 0 10px;
+}
+.nav-brand{
+    font-size: 2rem;
+    color: white;
+}
+#Home{
+    min-height: auto;
+    background-color: #8ecccc;
+    overflow: visible;
+}
+#Home .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-text{
+
+}
+#Home img{
+    margin-left: 30px;
+}
+.home-text h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.home-text p{
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+#Home img{
+    max-width: 400px;
+}
+#Boxes{
+    background-color: #212121;
+    min-height: 54vh;
+    display: flex;
+    align-items: center;
+}
+#Boxes .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    background-color: #50717b ;
+    flex: 1;
+    margin: 20px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.box h4{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+@media (max-width : 768px){
+    #Home .container{
+        flex-direction: column;
+    }
+    .home-text{
+        text-align: center;
+    }
+    #Home img{
+        margin-left: 0;
+    }
+    #Boxes .container{
+        display: block;
+    }
+}
